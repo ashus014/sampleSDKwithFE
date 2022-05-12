@@ -37,26 +37,29 @@
       <div class="row">
         <div class="col-md">
           <form action="../GetChargeStatus" method="get">
-            <div class="sign-in">Charging a Customer</div>
+            <div class="sign-in">Transaction Status</div>
             <div class="form-group">
-              <label id="words_1"> Amount </label>
+              <label id="words_1"> Merchant ID </label>
 
               <input
                 type="text"
                 class="form-control"
-                name = "amount"
-                placeholder="Enter Amount"
+                name = "merchantId"
+                id="merchantId"
+                placeholder="Merchant ID"
               />
             </div>
             <div class="form-group">
-              <label id="words_2"> Currency Code </label>
+              <label id="words_2"> TransactionId Type </label>
               <input
                 type="text"
                 class="form-control"
-                placeholder="INR"
+                name = "TransactionIdType"
+                id= "TransactionIdType"
+                placeholder="MERCHANT_TXN_ID"
               />
               <div class="form-group">
-                <button type="submit" class="btn btn-warning" id="sign-in">
+                <button  type="submit" class="btn btn-warning" id="submit">
                   Submit
                 </button>
               </div>
@@ -69,5 +72,16 @@
     </div>
     <!--Container End-->
     <!--Form-->
+
+    <div>
+      <table id = "display">
+        <tr>
+          <th>Merchant ID</th>
+          <th>Merchant Transaction ID</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>

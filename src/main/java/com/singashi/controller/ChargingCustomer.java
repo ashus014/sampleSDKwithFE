@@ -1,6 +1,7 @@
-package com.singashi.controller;
+package src.main.java.com.singashi.controller;
+
 import java.io.IOException;
-import java.net.http.HttpResponse;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,22 +21,7 @@ public class ChargingCustomer extends HttpServlet{
 public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		
 		int i = Integer.parseInt(req.getParameter("amount"));
-		
-		
-		
-	
-		
-//		HttpClient client = HttpClients.custom().build();
-//		HttpUriRequest request = RequestBuilder.get()
-//				.setUri("http://localhost:8080/api/smart-store/payment/charge/status")
-//				.setHeader("merchantID", "ABCDEFPVUTQXU1")
-//				.build();
 
-		//client.execute(request);
-		
-		
-
-		//res.getWriter().println(i);
 		System.out.println(i);
 		
 		

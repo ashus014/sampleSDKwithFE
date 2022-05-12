@@ -1,4 +1,4 @@
-package com.singashi.controller;
+package src.main.java.com.singashi.controller;
 
 import java.io.IOException;
 
@@ -13,7 +13,8 @@ import com.singashi.entity.Employee;
 public class AddServlet extends HttpServlet{
 	
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
-		
+
+
 		int i = Integer.parseInt(req.getParameter("num1"));
 		int j = Integer.parseInt(req.getParameter("num2"));
 		
