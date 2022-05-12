@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+  
+  <display-name>SdkWithServlet</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  
+<servlet>
+	<servlet-name>ChargingACustomer</servlet-name>
+	<servlet-class>com.singashi.controller.ChargingCustomer</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>ChargeStatus</servlet-name>
+	<servlet-class>com.singashi.controller.ChargeStatus</servlet-class>
+</servlet>
+<!-- <servlet>
+	<servlet-name>SqOperation</servlet-name>
+	<servlet-class>com.singashi.controller.ChargeStatus</servlet-class>
+</servlet> -->
+<!-- <servlet>
+	<servlet-name>AddOperation</servlet-name>
+	<servlet-class>com.singashi.controller.AddServlet</servlet-class>
+</servlet> -->
+
+<servlet-mapping>
+  	<servlet-name>ChargingACustomer</servlet-name>
+	<url-pattern>/chargingCustomer</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ChargeStatus</servlet-name>
+	<url-pattern>/GetChargeStatus</url-pattern>
+</servlet-mapping>
+<!-- <servlet-mapping>
+	<servlet-name>SqOperation</servlet-name>
+	<url-pattern>/sq</url-pattern>
+</servlet-mapping> -->
+<!-- <servlet-mapping>
+	<servlet-name>AddOperation</servlet-name>
+	<url-pattern>/add</url-pattern>
+</servlet-mapping> -->
+
+
+
+
+
+
+                               <!-- JSP Server Mapping -->
+                               
+<servlet>
+	<servlet-name>JspMapping</servlet-name>
+	<jsp-file>/jsp/display.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>JspMapping</servlet-name>
+	<url-pattern>/hello</url-pattern>
+</servlet-mapping>
+
+</web-app>
